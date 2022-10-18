@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+    name="description"
+    content="contact form and other information to reach out to qazi hammad mueenqari">
+    <link rel="stylesheet" href="contactme.css">
+    <script src="contactme.js"></script>
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js"
+    crossorigin="anonymous"></script>
+    <title>Contact Me</title>
+</head>
+<body>
+     <h1>Hey, get in touch!</h1>
+     <div class="social-menu">
+      <ul>
+          <li><a href="mailto:mueenqari111@gmail.com" alt="Contact" target="blank"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+          <li><a href="https://www.instagram.com/qazihammadmueenqari/" target="blank" alt="Instagram"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+  </div>
+  <form action="https://formsubmit.co/mueenqari111@gmail.com" method="POST">
+        <table class="form-style">
+           <tr>
+              <td>
+                 <label>
+                    Your name <span class="required">*</span>
+                 </label>
+              </td>
+              <td>
+                 <input type="text" name="name" placeholder="name" class="long" required>
+                 <span class="error" id="errorname"></span>
+              </td>
+           </tr>
+           <tr>
+              <td>
+                 <label>
+                   Your email address <span class="required">*</span>
+                 </label>
+              </td>
+              <td>
+                 <input type="email" name="email" placeholder="e-mail" class="long" required>
+                 <span class="error" id="erroremail"></span>
+              </td>
+           </tr>
+       
+           <tr>
+            <td>
+               <label>
+                  Your number <span class="required"></span>
+               </label>
+            </td>
+            <td>
+               <input type="number" name="number" placeholder="number" class="long" optional>
+            </td>
+         </tr>
+       
+         <tr>
+              <td>
+                 <label>
+                    Message <span class="required">*</span>
+                 </label>
+              </td>
+              <td>
+                 <textarea class="long" input type="text" name="text" placeholder="message" required></textarea>
+                 <span class="error" id="errormsg"></span>
+              </td>
+           </tr>
+           <tr>
+              <td></td>
+              <td>
+                <div class="sr">
+                  <button type="submit">Send</button>
+                  <input type="hidden" name="_subject" value="New Mail">
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_template" value="table">
+                 <input type="reset" value="Reset"> 
+                </div>
+              </td>
+           </tr>
+        </table>
+     </form>
+<div class="box glowing"></div>
+    </body>
+</html>
